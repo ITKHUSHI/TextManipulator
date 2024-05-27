@@ -57,12 +57,12 @@ function App() {
 
      <section className=' inline sm:flex flex-row  m-8 gap-4 justify-center items-center'>
      
-    <button className="  rounded-lg p-3 mx-1 my-2  outline-none text-white shadow-lg shadow-blue-500 hover:transform-3 transform hover:scale-50  "   onClick={handleUpClick} >Convert to Uppercase </button> 
-    <button className=" shadow-lg shadow-blue-500 text-white  rounded-lg p-1 mx-1 my-2  outline-none  hover:scale-50   "   onClick={handleLoClick} >Convert to Lowercase</button>
-    <button className=" shadow-lg shadow-blue-500 text-white rounded-lg p-1 mx-1 my-2  outline-none   hover:scale-50  "    onClick={handleClearClick} >Clear Text</button>
-    <button className=" shadow-lg shadow-blue-500 text-white rounded-lg p-1 mx-1 my-2  outline-none   hover:scale-50  "   onClick={handleSpeak}>Listen Text</button>
-    <button className=" shadow-lg shadow-blue-500 text-white rounded-lg p-1 mx-1 my-2  outline-none   hover:scale-50  "   onClick={handleCopy}>Copy Text</button>
-    <button className=" shadow-lg shadow-blue-500 text-white rounded-lg p-1 mx-1 my-2  outline-none   hover:scale-50  "   onClick={handleRemoveSpace}>Remove Space</button>
+    <button className=" lg:p-4 rounded-lg p-3 mx-1 my-2  outline-none text-white shadow-lg shadow-blue-500  hover:bg-gradient-to-l from-blue-600  "   onClick={handleUpClick} >Convert to Uppercase </button> 
+    <button className=" lg:p-4 shadow-lg shadow-blue-500 text-white  rounded-lg p-1 mx-1 my-2  outline-none  hover:bg-gradient-to-l from-blue-600  "   onClick={handleLoClick} >Convert to Lowercase</button>
+    <button className=" lg:p-4 shadow-lg shadow-blue-500 text-white rounded-lg p-2 mx-1 my-2  outline-none   hover:bg-gradient-to-l from-blue-600 "    onClick={handleClearClick} >Clear Text</button>
+    <button className=" lg:p-4 shadow-lg shadow-blue-500 text-white rounded-lg p-2 mx-1 my-2  outline-none   hover:bg-gradient-to-l from-blue-600 "   onClick={handleSpeak}>Listen Text</button>
+    <button className=" lg:p-4 shadow-lg shadow-blue-500 text-white rounded-lg p-2 mx-1 my-2  outline-none   hover:bg-gradient-to-l from-blue-600 "   onClick={handleCopy}>Copy Text</button>
+    <button className=" lg:p-4 shadow-lg shadow-blue-500 text-white rounded-lg p-1 mx-1 my-2  outline-none   hover:bg-gradient-to-l from-blue-600 "   onClick={handleRemoveSpace}>Remove Space</button>
     </section>  
  
    
@@ -71,7 +71,7 @@ function App() {
       <textarea placeholder="write-here" className=" 
       w-full   mx-2 my-2 text-black-200  font-md font-serif lg:w-[70%] lg:h-full " value={text} onChange={handleOnChange} id="myBox" rows="8"  ></textarea>
        </div>
-     <div className="rounded-lg mx-2 my-2  flex  overflow-hidden  justify-start items-center lg:ml-64 ">
+     <div className="rounded-lg mx-2 my-2  flex  overflow-hidden  justify-start items-center lg:ml-64 lg:pb-10 ">
          <div className="mx-2 my-2 p-2 text-bold text-white ">
       <h1>your summary text</h1>
     <p>{text.split(" ").filter((element)=>{
