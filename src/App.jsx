@@ -47,11 +47,11 @@ function App() {
 
   return (
     <>
-     <main className='bg-black w-full h-full flex justify-center items-center pb-8'>
+     <main className='bg-black w-full h-full flex justify-center items-center pb-8 lg:inline'>
      <div className='bg-black w-[100vw] h-[100vh] p-2 ' >
       
       <div className=' w-full h-32 flex justify-center items-center'>
-       <h2 className='text-xl font-bold text-white'>Text Manipulator</h2>
+       <h2 className='text-xl font-bold text-white bg-gradient-to-l to-slate-950 from-blue-600 p-4 rounded-lg'>Text Manipulator</h2>
       </div>
    
 
@@ -67,12 +67,12 @@ function App() {
  
    
         
-    <div className=" rounded-lg mx-2 my-2  flex  overflow-hidden  justify-center items-center  lg:h-[50%]">
+    <div className=" rounded-lg mx-2 my-2  flex  overflow-hidden  justify-center items-center  lg:h-[50%] ">
       <textarea placeholder="write-here" className=" 
       w-full   mx-2 my-2 text-black-200  font-md font-serif lg:w-[70%] lg:h-full " value={text} onChange={handleOnChange} id="myBox" rows="8"  ></textarea>
        </div>
-     <div className="rounded-lg mx-2 my-2  flex  overflow-hidden  justify-start items-center lg:ml-64 lg:pb-10 ">
-         <div className="mx-2 my-2 p-2 text-bold text-white ">
+     <div className=" mx-2 my-2 flex overflow-hidden  justify-start items-center bg-black w-full">
+         <div className="mx-2 my-2  text-bold text-white bg-black lg:ml-64 lg:pb-16 w-full">
       <h1>your summary text</h1>
     <p>{text.split(" ").filter((element)=>{
      return element.length!==0} ).length}
