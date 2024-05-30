@@ -1,6 +1,6 @@
 // @ts-ignore
 import React, { useState } from 'react';
-import { useSpeechSynthesis } from 'react-speech-kit';
+// import Speech from 'react-speech';
 
 
 
@@ -8,10 +8,11 @@ function App() {
  
   const [text, setText] = useState(" ");  
     
-  const {speak} =useSpeechSynthesis();
+  // const {speak} =useSpeechSynthesis();
  
   const handleSpeak=()=>{
-   speak({text});
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
    
   }
 
